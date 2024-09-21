@@ -29,27 +29,61 @@ const { title } = Astro.props; //etiqueta que tiene una propiedad que se llama t
         <!-- <slot /> -->
         <header class="bg-[#161d24] h-20">
             <div class="container max-w-[1200px] mx-auto">
-                <div class="flex-menu m-0 flex h-20 w-3/5 float-left items-center text-[#ecf2f8] font-sans">
-                    <img class="w-40"
+                <div
+                    class="flex-menu m-0 flex h-20 w-3/5 float-left items-center text-[#ecf2f8] font-sans"
+                >
+                    <img
+                        class="w-40"
                         src="https://store.akamai.steamstatic.com/public/shared/images/header/logo_steam.svg?t=962016"
                         alt="Logo Steam"
                     />
                     <menu>
-                        <li class="ml-[10px] list-none inline-block"><a class="my-0 mx-2 font-semibold no-underline" href="#">Tienda</a></li>
-                        <li class="ml-[10px] list-none inline-block"><a class="my-0 mx-2 font-semibold no-underline" href="#">Comunidad</a></li>
-                        <li class="ml-[10px] list-none inline-block"><a class="my-0 mx-2 font-semibold no-underline" href="#">Acerca de</a></li>
-                        <li class="ml-[10px] list-none inline-block"><a class="my-0 mx-2 font-semibold no-underline" href="#">Soporte</a></li>
+                        <li
+                            class="ml-[10px] list-none inline-block hover:text-[#6c6cff]"
+                        >
+                            <a
+                                class="my-0 mx-2 font-semibold no-underline text-[#ffffff] relative hover:text-[#6c6cff] after:content-['content block w-[100%] h-[3px] bg-[#6c6cff] absolute left-0 bottom-[-5px] transform scale-x-0 transition duration-[0.3s] ease-linear hover:after:scale-x-100']"
+                                href="#">Tienda</a
+                            >
+                        </li>
+                        <li
+                            class="ml-[10px] list-none inline-block hover:text-[#6c6cff]"
+                        >
+                            <a
+                                class="my-0 mx-2 font-semibold no-underline text-[#ffffff] relative hover:text-[#6c6cff] after:content-['content block w-[100%] h-[3px] bg-[#6c6cff] absolute left-0 bottom-[-5px] transform scale-x-0 transition duration-[0.3s] ease-linear hover:after:scale-x-100']"
+                                href="#">Comunidad</a
+                            >
+                        </li>
+                        <li
+                            class="ml-[10px] list-none inline-block hover:text-[#6c6cff]"
+                        >
+                            <a
+                                class="my-0 mx-2 font-semibold no-underline text-[#ffffff] relative hover:text-[#6c6cff] after:content-['content block w-[100%] h-[3px] bg-[#6c6cff] absolute left-0 bottom-[-5px] transform scale-x-0 transition duration-[0.3s] ease-linear hover:after:scale-x-100']"
+                                href="#">Acerca de</a
+                            >
+                        </li>
+                        <li
+                            class="ml-[10px] list-none inline-block hover:text-[#6c6cff]"
+                        >
+                            <a  
+                                class="my-0 mx-2 font-semibold no-underline text-[#ffffff] relative hover:text-[#6c6cff] after:content-['content block w-[100%] h-[3px] bg-[#6c6cff] absolute left-0 bottom-[-5px] transform scale-x-0 transition duration-[0.3s] ease-linear hover:after:scale-x-100']"
+                                href="#">Soporte</a
+                            >
+                        </li>
                     </menu>
                 </div>
                 <div class="menu-right float-left mt-0 w-2/5">
-                    <a href="#" class="btn-donwnload">
+                    <a
+                        href="#"
+                        class="btn-download no-underline text-[#f0f8ff] my-0 mx-2 bg-[#789806] py-[6px] px-[12px] font-[sans-serif]  inline-flex gap-[8px] items-center hover:bg-[#728f08]"
+                    >
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             fill="none"
                             viewBox="0 0 24 24"
                             stroke-width="1.5"
                             stroke="currentColor"
-                            class="size-6"
+                            class="size-6 w-[18px]"
                         >
                             <path
                                 stroke-linecap="round"
@@ -59,32 +93,71 @@ const { title } = Astro.props; //etiqueta que tiene una propiedad que se llama t
                         </svg>
                         Instalar Steam
                     </a>
-                    <a href="#">Iniciar sesión</a>
-                    |
-                    <a href="#">Idioma</a>
+                    <a class="no-underline text-[#f0f8ff] my-0 mx-2" href="#"
+                        >Iniciar sesión</a
+                    >
+                    <a class="no-underline text-[#f0f8ff] my-0 mx-2" href="#"
+                        >Idioma</a
+                    >
                 </div>
             </div>
         </header>
-        <div class="banner">
-            <menu class="small-menu">
-                <li><a href="#">Tu tienda</a></li>
-                <li><a href="#">Nuevo y destacable</a></li>
-                <li><a href="#">Categorías</a></li>
-                <li><a href="#">Tienda de Puntos</a></li>
-                <li><a href="#">Noticias</a></li>
-                <li><a href="#">Laboratorios</a></li>
-                <form class="form-menu">
-                    <input id="search" type="search" placeholder="  buscar" />
-                    <button id="icon-search" type="submit"
+        <div
+            class="banner bg-[url('https://gepig.com/game_cover_460w/6742.jpg')] bg-cover h-[360px] m-0 relative"
+        >
+            <menu
+                class="small-menu flex bg-[#5252d4] w-[70%] text-center py-[15px] pr-5 pl-10 absolute top-[5%] left-[20%]"
+            >
+                <li class="inline-block mr-[15px]">
+                    <a class="no-underline text-[#f0f8ff] text-[17]" href="#"
+                        >Tienda de Puntos</a>
+                </li>
+                <li class="inline-block mr-[15px]">
+                    <a class="no-underline text-[#f0f8ff] text-[17]" href="#"
+                        >Categorías</a>
+                </li>
+                <li class="inline-block mr-[15px]">
+                    <a class="no-underline text-[#f0f8ff] text-[17]" href="#"
+                        >Noticias</a>
+                </li>
+                <li class="inline-block mr-[15px]">
+                    <a class="no-underline text-[#f0f8ff] text-[17]" href="#"
+                        >Nuevo y destacable</a>
+                </li>
+                <li class="inline-block mr-[15px]">
+                    <a class="no-underline text-[#f0f8ff] text-[17]" href="#"
+                        >Laboratorios</a>
+                </li>
+                <li class="inline-block mr-[15px]">
+                    <a class="no-underline text-[#f0f8ff] text-[17]" href="#"
+                        >Tu tienda</a>
+                </li>
+                <form class="form-menu flex gap-0 pl-10 duration-[0.5s]">
+                    <input
+                        class="bg-[#2c2c8f] rounded-md h-[25px]"
+                        id="search"
+                        type="search"
+                        placeholder="  buscar"
+                    />
+                    <button
+                        class="icon-search bg-[#1414c0] rounded-md"
+                        id="icon-search"
+                        type="submit"
                         ><i class="fa-duotone fa-solid fa-magnifying-glass"
                         ></i></button
                     >
                 </form>
             </menu>
         </div>
-        <div class="left-menu"></div>
-        <div class="banner2 container max-w-[1200px] mx-auto"></div>
-        <div class="banner3"></div>
+        <div
+            class="left-menu float-left z-[1] left-[calc(((100% - 1200px) / 2) - 180px)] bg-[#ffc0cb] w-[180px] h-[360px] sticky top-0"
+        >
+        </div>
+        <div
+            class="banner2 container max-w-[1200px] mx-auto relative bg-[#800080] h-60"
+        >
+        </div>
+        <div class="banner3 bg-[#40e0d0] h-[1200px]"></div>
 
         <div
             class="group bg-blue-500 inline-flex text-white py-2 px-4 rounded hover:bg-blue-600 transition-colors duration-300 hover:cursor-pointer items-center"
@@ -95,7 +168,7 @@ const { title } = Astro.props; //etiqueta que tiene una propiedad que se llama t
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"
-                class="size-4 mr-1 mt-1 group-hover:animate-spin "
+                class="size-4 mr-1 mt-1 group-hover:animate-spin"
             >
                 <path
                     stroke-linecap="round"
@@ -123,7 +196,7 @@ const { title } = Astro.props; //etiqueta que tiene una propiedad que se llama t
 </html>
 
 <style>
-  /*  
+    /*  
    html,
     body {
         padding: 0;
@@ -139,22 +212,22 @@ const { title } = Astro.props; //etiqueta que tiene una propiedad que se llama t
     .container {
         max-width: 1200px;
         /* 0 arriba y abajo, auto a izquierda y derecha */
-       /* margin: 0 auto;
+    /* margin: 0 auto;
     }
 */
-/*
+    /*
     .flex-menu {
         margin: 0;
         display: flex;
         height: 80px;
         width: 60%;
         /* float left es para permitir que un elemento de bloque tenga contenido a su lado */
-       /* float: left;
+    /* float: left;
         align-items: center;
         color: #ecf2f8;
         font-family: sans-serif;
         /* text transform uppercase transforma todo a mayuscula */
-       /* text-transform: uppercase;
+    /* text-transform: uppercase;
     }
     .flex-menu a {
         margin: 0 8px;
@@ -163,34 +236,36 @@ const { title } = Astro.props; //etiqueta que tiene una propiedad que se llama t
         text-decoration: none;
     }
 */
-/*
+    /*
     .flex-menu img {
         width: 160px;
     }
 */
-/*
+    /*
     .flex-menu li {
         margin-left: 10px;
         /* le digo list style none porque normalmente esa etiqueta no deja poner una al lado de otro, entonces anulo eso */
-       /* list-style: none;
+    /* list-style: none;
         display: inline-block;
     }
 */
-/*
+    /*
     .menu-right {
         float: left;
         margin-top: 0px;
         width: 40%;
     }
  */
-
+    /*
     .menu-right a {
         text-decoration: none;
-        color: aliceblue;
+        color: #f0f8ff;
         margin: 0 8px;
     }
+*/
+    /*
     .btn-donwnload {
-        color: rgb(236, 242, 248);
+        color: #ecf2f8;
         background-color: #789806;
         display: inline-block;
         padding: 6px 12px;
@@ -200,12 +275,16 @@ const { title } = Astro.props; //etiqueta que tiene una propiedad que se llama t
         gap: 8px;
         align-items: center;
     }
+*/
+    /*
     .btn-donwnload svg {
         width: 18px;
     }
     .btn-donwnload:hover {
         background-color: #728f08;
     }
+*/
+    /*
     .banner {
         background: url(https://gepig.com/game_cover_460w/6742.jpg);
         background-size: cover;
@@ -213,100 +292,123 @@ const { title } = Astro.props; //etiqueta que tiene una propiedad que se llama t
         margin: 0;
         position: relative;
     }
+    */
+    /*
     .banner2 {
         position: relative; /* para que mantenga la posicion y no afecte el small-menu*/
-        background: purple;
+    /* background: #800080;
         height: 240px;
     }
+    */
+    /*
     .left-menu {
         float: left;
         z-index: 1;
         left: calc(((100% - 1200px) / 2) - 180px);
-        background: pink;
+        background: #ffc0cb;
         /* margin-left: 20px; */
-        width: 180px;
+    /* width: 180px;
         height: 360px;
         position: sticky;
         /* para que se salga del flujo del padre */
-        top: 0;
+    /* top: 0;
     }
+    */
+    /*
     .banner3 {
-        background-color: turquoise;
+        background-color: #40e0d0;
         height: 1200px;
     }
+ */
+    /*
     .small-menu a {
         text-decoration: none;
-        color: aliceblue;
+        color: #f0f8ff;
         font-size: 17px;
     }
-
+*/
+    /*
     .small-menu {
         display: flex;
 
         margin: 20px auto 0 auto;
         /* margin-top: 20px; */
-        background-color: #5252d4;
+    /*background-color: #5252d4;
         width: 70%;
         text-align: center;
         padding: 15px 20px 15px 40px;
         position: absolute;
         top: 5%;
-        left: 20%;
-        /* transform: translate(-5-20); */
+        left: 20%;*/
+    /* transform: translate(-5-20); */
+    /*
     }
+*/
+    /*
     .small-menu li {
         /* background-color: #8790be; */
-        display: inline-block;
+    /* display: inline-block;
         margin-right: 15px;
     }
+ */
+    /*
     #search {
         background-color: #2c2c8f;
         border-radius: 6px;
 
         height: 25px;
-        /* padding: 10px; */
+        /* padding: 10px; 
     }
+*/
+    /*
     #icon-search {
         background-color: #1414c0;
         border-radius: 6px;
     }
+*/
+    /*
     .form-menu {
         display: flex;
         gap: 0;
         padding-left: 40px;
         transition: 0.5s;
     }
+*/
+    /*
     .flex-menu a {
         font-weight: 600;
         text-decoration: none;
-        color: rgb(255, 255, 255);
-        position: relative; /* Necesario para el pseudo-elemento */
+        color: #ffffff;
+        position: relative; /* Necesario para el pseudo-elemento 
     }
 
     .flex-menu a:hover {
-        color: rgb(108, 108, 255);
+        color: #6c6cff;
     }
 
     .flex-menu li:hover {
-        color: rgb(108, 108, 255);
+        color: #6c6cff;
     }
-
+*/
+    /*
     .flex-menu a::after {
-        content: ""; /* Crea el pseudo-elemento */
+        content: ""; /* Crea el pseudo-elemento 
         display: block;
-        width: 100%; /* Ancho del subrayado */
-        height: 3px; /* Grosor del subrayado */
-        background-color: rgb(108, 108, 255); /* Color del subrayado */
+        width: 100%; /* Ancho del subrayado 
+        height: 3px; /* Grosor del subrayado 
+        background-color: #6c6cff; /* Color del subrayado 
         position: absolute;
         left: 0;
-        bottom: -5px; /* Ajusta la distancia desde el texto (cambia este valor) */
-        transform: scaleX(0); /* Inicia oculto */
-        transition: transform 0.3s ease; /* Transición suave */
+        bottom: -5px; /* Ajusta la distancia desde el texto (cambia este valor) 
+        transform: scaleX(0); /* Inicia oculto 
+        transition: transform 0.3s ease; /* Transición suave 
     }
-
+*/
+    /*
     .flex-menu a:hover::after {
-        transform: scaleX(1); /* Muestra el subrayado al pasar el mouse */
+        transform: scaleX(1); /* Muestra el subrayado al pasar el mouse 
     }
+*/
     .small-menu li:hover {
         background-color: rgb(108, 108, 255);
         box-shadow: 0 10px 40px rgb(108, 108, 255);
