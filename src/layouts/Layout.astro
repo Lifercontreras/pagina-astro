@@ -25,12 +25,12 @@ const { title } = Astro.props; //etiqueta que tiene una propiedad que se llama t
         />
         <link />
     </head>
-    <body class="p-0 m-0">
+    <body class="p-0 m-0 bg-[#1b2838]">
         <!-- <slot /> -->
-        <header class="bg-[#161d24] h-20">
+        <header class="bg-[#161d24] h-[100px]">
             <div class="container max-w-[1200px] mx-auto">
                 <div
-                    class="flex-menu m-0 flex h-20 w-3/5 float-left items-center text-[#ecf2f8] font-sans"
+                    class="flex-menu m-0 ml-[6%] flex h-20 w-[52%] float-left items-center text-[#ecf2f8] font-sans"
                 >
                     <img
                         class="w-40"
@@ -42,7 +42,7 @@ const { title } = Astro.props; //etiqueta que tiene una propiedad que se llama t
                             class="ml-[10px] list-none inline-block hover:text-[#6c6cff]"
                         >
                             <a
-                                class="my-0 mx-2 font-semibold no-underline text-[#ffffff] relative hover:text-[#6c6cff] after:content-['content block w-[100%] h-[3px] bg-[#6c6cff] absolute left-0 bottom-[-5px] transform scale-x-0 transition duration-[0.3s] ease-linear hover:after:scale-x-100']"
+                                class="my-0 mx-2 font-semibold no-underline text-[#ffffff] relative hover:text-[#6c6cff]"
                                 href="#">Tienda</a
                             >
                         </li>
@@ -50,7 +50,7 @@ const { title } = Astro.props; //etiqueta que tiene una propiedad que se llama t
                             class="ml-[10px] list-none inline-block hover:text-[#6c6cff]"
                         >
                             <a
-                                class="my-0 mx-2 font-semibold no-underline text-[#ffffff] relative hover:text-[#6c6cff] after:content-['content block w-[100%] h-[3px] bg-[#6c6cff] absolute left-0 bottom-[-5px] transform scale-x-0 transition duration-[0.3s] ease-linear hover:after:scale-x-100']"
+                                class="my-0 mx-2 font-semibold no-underline text-[#ffffff] relative hover:text-[#6c6cff]"
                                 href="#">Comunidad</a
                             >
                         </li>
@@ -58,15 +58,15 @@ const { title } = Astro.props; //etiqueta que tiene una propiedad que se llama t
                             class="ml-[10px] list-none inline-block hover:text-[#6c6cff]"
                         >
                             <a
-                                class="my-0 mx-2 font-semibold no-underline text-[#ffffff] relative hover:text-[#6c6cff] after:content-['content block w-[100%] h-[3px] bg-[#6c6cff] absolute left-0 bottom-[-5px] transform scale-x-0 transition duration-[0.3s] ease-linear hover:after:scale-x-100']"
+                                class="my-0 mx-2 font-semibold no-underline text-[#ffffff] relative hover:text-[#6c6cff]"
                                 href="#">Acerca de</a
                             >
                         </li>
                         <li
                             class="ml-[10px] list-none inline-block hover:text-[#6c6cff]"
                         >
-                            <a  
-                                class="my-0 mx-2 font-semibold no-underline text-[#ffffff] relative hover:text-[#6c6cff] after:content-['content block w-[100%] h-[3px] bg-[#6c6cff] absolute left-0 bottom-[-5px] transform scale-x-0 transition duration-[0.3s] ease-linear hover:after:scale-x-100']"
+                            <a
+                                class="my-0 mx-2 font-semibold no-underline text-[#ffffff] relative hover:text-[#6c6cff]"
                                 href="#">Soporte</a
                             >
                         </li>
@@ -75,7 +75,7 @@ const { title } = Astro.props; //etiqueta que tiene una propiedad que se llama t
                 <div class="menu-right float-left mt-0 w-2/5">
                     <a
                         href="#"
-                        class="btn-download no-underline text-[#f0f8ff] my-0 mx-2 bg-[#789806] py-[6px] px-[12px] font-[sans-serif]  inline-flex gap-[8px] items-center hover:bg-[#728f08]"
+                        class="btn-download no-underline text-[#f0f8ff] my-0 mx-2 bg-[#789806] py-[6px] px-[12px] font-[sans-serif] inline-flex gap-[8px] items-center hover:bg-[#728f08]"
                     >
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -103,96 +103,161 @@ const { title } = Astro.props; //etiqueta que tiene una propiedad que se llama t
             </div>
         </header>
         <div
-            class="banner bg-[url('https://gepig.com/game_cover_460w/6742.jpg')] bg-cover h-[360px] m-0 relative"
+            class="banner bg-[url('https://gepig.com/game_cover_460w/6742.jpg')] bg-cover h-[450px] m-0 relative"
         >
             <menu
-                class="small-menu flex bg-[#5252d4] w-[70%] text-center py-[15px] pr-5 pl-10 absolute top-[5%] left-[20%]"
+                class="small-menu flex bg-[linear-gradient(90deg,rgb(62,103,150,0.919)_11.38%,rgb(58,120,177,0.8)_25.23%,rgb(15,33,110)_100%)] w-[50.5%] text-center py-[15px] pr-5 pl-10 absolute top-[5%] left-[18.5%] ml-[4%]"
             >
-                <li class="inline-block mr-[15px]">
+                <li class="inline-block mr-[15px] hover:bg-[#304380]">
                     <a class="no-underline text-[#f0f8ff] text-[17]" href="#"
-                        >Tienda de Puntos</a>
+                        >Tienda de Puntos</a
+                    >
                 </li>
-                <li class="inline-block mr-[15px]">
+                <li class="inline-block mr-[15px] hover:bg-[#304380]">
                     <a class="no-underline text-[#f0f8ff] text-[17]" href="#"
-                        >Categorías</a>
+                        >Categorías</a
+                    >
                 </li>
-                <li class="inline-block mr-[15px]">
+                <li class="inline-block mr-[15px] hover:bg-[#304380]">
                     <a class="no-underline text-[#f0f8ff] text-[17]" href="#"
-                        >Noticias</a>
+                        >Noticias</a
+                    >
                 </li>
-                <li class="inline-block mr-[15px]">
+                <li class="inline-block mr-[15px] hover:bg-[#304380]">
                     <a class="no-underline text-[#f0f8ff] text-[17]" href="#"
-                        >Nuevo y destacable</a>
+                        >Nuevo y destacable</a
+                    >
                 </li>
-                <li class="inline-block mr-[15px]">
+                <li class="inline-block mr-[15px] hover:bg-[#304380]">
                     <a class="no-underline text-[#f0f8ff] text-[17]" href="#"
-                        >Laboratorios</a>
+                        >Laboratorios</a
+                    >
                 </li>
-                <li class="inline-block mr-[15px]">
+                <li class="inline-block mr-[15px] hover:bg-[#304380]">
                     <a class="no-underline text-[#f0f8ff] text-[17]" href="#"
-                        >Tu tienda</a>
+                        >Tu tienda</a
+                    >
                 </li>
-                <form class="form-menu flex gap-0 pl-10 duration-[0.5s]">
+                <div class="form-menu flex gap-0 pl-10 duration-[0.5s]">
                     <input
-                        class="bg-[#2c2c8f] rounded-md h-[25px]"
+                        class="bg-[#316282] rounded-md h-[25px]"
                         id="search"
                         type="search"
                         placeholder="  buscar"
                     />
                     <button
-                        class="icon-search bg-[#1414c0] rounded-md"
+                        class="icon-search bg-[#839fb4] rounded-md "
                         id="icon-search"
                         type="submit"
                         ><i class="fa-duotone fa-solid fa-magnifying-glass"
                         ></i></button
                     >
-                </form>
+                </div>
             </menu>
         </div>
         <div
-            class="left-menu float-left z-[1] left-[calc(((100% - 1200px) / 2) - 180px)] bg-[#ffc0cb] w-[180px] h-[360px] sticky top-0"
+            class="left-menu float-left z-[1] left-[calc(((100%-1200px)/2)-180px)] bg-[#ffc0cb] w-[180px] h-[360px] sticky top-0 "
         >
         </div>
-        <div
-            class="banner2 container max-w-[1200px] mx-auto relative bg-[#800080] h-60"
-        >
-        </div>
-        <div class="banner3 bg-[#40e0d0] h-[1200px]"></div>
-
-        <div
-            class="group bg-blue-500 inline-flex text-white py-2 px-4 rounded hover:bg-blue-600 transition-colors duration-300 hover:cursor-pointer items-center"
-        >
-            <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="size-4 mr-1 mt-1 group-hover:animate-spin"
+        <div class="recomendado w-[980px] h-[480px] mr-[4%] ml-[21.5%]">
+            <h1
+                class="text-[15px] mb-1 ml-5 text-white mt-5 font-sans font-normal"
             >
-                <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99"
-                ></path>
-            </svg>
-
-            presióname!
-            <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="size-4 mt-[4px] ml-1"
-            >
-                <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"></path>
-            </svg>
+                DESTACADOS Y RECOMENDADOS
+            </h1>
+            <div class="contenido flex list-none ml-5 font-serif">
+                <div
+                    class="hover:cursor-pointer h-[360px] w-[60%] bg-[#fff5f5] bg-no-repeat bg-cover bg-[url('https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2198150/ss_533b0699cd1d6692cfa332f234ce03a36c547480.600x338.jpg?t=1727471389')] shadow-[3px_3px_8px_#00000066]"
+                >
+                </div>
+                <a href="">
+                    <div
+                        class="h-[360px] w-[40%] bg-gray-900 shadow-[3px_3px_8px_#00000066]"
+                    >
+                        <a href="">
+                            <li
+                                class="mt-2 mb-2 text-[20px] ml-5 text-[#fff5f5]"
+                            >
+                                Black Myth: Wukong
+                            </li>
+                            <div class="flex flex-wrap">
+                                <img
+                                    class="h-[80px] w-[180px] mb-2"
+                                    src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2198150/ss_c9086858afd32f9c2bd49c164ddc2494af1e7f31.600x338.jpg?t=1727471389"
+                                    alt=""
+                                />
+                                <img
+                                    class="h-[80px] w-[180px] mb-2 ml-2"
+                                    src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2198150/ss_83248b45f1431127f94ab7bcfc246e5efb26848e.600x338.jpg?t=1727471389"
+                                    alt=""
+                                />
+                                <img
+                                    class="h-[80px] w-[180px] mb-2"
+                                    src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2198150/ss_6a8c7a510715796a659bd9fd828cc02cf73e11de.600x338.jpg?t=1727471389"
+                                    alt=""
+                                />
+                                <img
+                                    class="h-[80px] w-[180px] mb-2 ml-2"
+                                    src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2198150/ss_1a98b0d5e8111f100b3ececda8f682333337e3cb.600x338.jpg?t=1727471389"
+                                    alt=""
+                                />
+                            </div>
+                            <h1
+                                class="text-[20px] text-[#fff5f5] ml-5 my-0"
+                            >
+                                Ya disponible
+                            </h1>
+                            <h2
+                                class="text-[14px] h-5 w-28 bg-gray-400 text-center ml-5 rounded text-[#fff5f5]"
+                            >
+                                Lo mas vendido
+                            </h2>
+                            <h3
+                                class="ml-5 mb-3 text-[13px] text-[#fff5f5] mt-11 font-sans"
+                            >
+                                COL$ 199.000
+                            </h3>
+                        </a>
+                    </div>
+                </a>
+            </div>
         </div>
     </body>
+    <div class="banner3 bg-[#40e0d0] h-[1200px]"></div>
+
+    <div
+        class="group bg-blue-500 inline-flex text-white py-2 px-4 rounded hover:bg-blue-600 transition-colors duration-300 hover:cursor-pointer items-center"
+    >
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-4 mr-1 mt-1 group-hover:animate-spin"
+        >
+            <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99"
+            ></path>
+        </svg>
+
+        presióname!
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-4 mt-[4px] ml-1"
+        >
+            <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"></path>
+        </svg>
+    </div>
 </html>
 
 <style>
@@ -409,8 +474,11 @@ const { title } = Astro.props; //etiqueta que tiene una propiedad que se llama t
         transform: scaleX(1); /* Muestra el subrayado al pasar el mouse 
     }
 */
+  /*  
     .small-menu li:hover {
-        background-color: rgb(108, 108, 255);
-        box-shadow: 0 10px 40px rgb(108, 108, 255);
+        background-color: #6b6bff;
+        box-shadow: 0 10px 40px #6c6cff;
     }
+  */
+  
 </style>
